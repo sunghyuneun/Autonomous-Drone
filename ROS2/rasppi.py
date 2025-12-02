@@ -14,7 +14,8 @@ class RPiSubscriber(Node):
         self.subscription
 
     def arduino_write(self, msg):
-        ser.write(int(msg).encode())
+        write_data = str(msg.data) + '\n'
+        ser.write(write_data.encode("utf-8"))
         self.get_logger().info(f"Sent: {msg}")
 
 def main(args = None):
