@@ -16,7 +16,7 @@ class RPiSubscriber(Node):
     def arduino_write(self, msg):
         write_data = str(msg.data) + '\n'
         ser.write(write_data.encode("utf-8"))
-        self.get_logger().info(f"Sent: {msg}")
+        self.get_logger().info(f"Sent: {msg.data}")
 
 def main(args = None):
     rclpy.init(args=args)

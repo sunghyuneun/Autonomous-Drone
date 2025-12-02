@@ -20,14 +20,14 @@ class DesktopNode(Node):
     def publish_input(self):
         while rclpy.ok():
             try:
-                user_input = input('Input number (0-10)')
+                user_input = input('Input number (0-9)')
                 if (not user_input.strip()) and user_input.strip().isdigit():
                     self.get_logger().warn("Wrong input format")
                     continue
 
                 user_num = int(user_input)
 
-                if 0 <= user_num <= 10:
+                if 0 <= user_num <= 9:
                     msg = Int16()
                     msg.data = user_num
                     self.publisher_.publish(msg)
