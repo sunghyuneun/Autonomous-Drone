@@ -11,13 +11,16 @@ void setup() {
 
 void loop() {
   if (Serial.available() > 0){
-    lastValue = Serial.read();
+    char receivedChar = Serial.read();
+    if (receivedChar >= '0' && receivedChar <= '9'){
+      int receivedDigit = receivedChar - '0';
+      Serial.println(receivedDigit);
+      analogWrite(LEDpin, analogValue(receivedDigit));
+    }
   }
-  analogWrite(LEDpin, analogValue(lastValue));
   // put your main code here, to run repeatedly:
 }
 
-
 int analogValue (int input){
-  return map(input, 0, 10, 0, 255);
+  return map(input, 0, 9, 0, 255);
 }
