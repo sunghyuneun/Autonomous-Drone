@@ -11,7 +11,7 @@ class RPiSubscriber(Node):
     def __init__(self):
         super().__init__('rpi_subscriber')
         self.subscription = self.create_subscription(Int16,'input',self.arduino_write, 10)
-
+        self.subscription
 
     def arduino_write(self, msg):
         ser.write(int(msg).encode())

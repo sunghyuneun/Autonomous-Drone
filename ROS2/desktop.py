@@ -1,3 +1,5 @@
+#ENABLE FIREWALL DUIMBASS
+
 import rclpy
 from rclpy.node import Node
 import threading
