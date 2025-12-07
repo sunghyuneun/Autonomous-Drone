@@ -21,3 +21,8 @@ Desktop and Raspberry Pi share same network and domain, so commands can be sent 
 
 ## LiDAR
 Visualized LiDAR information from Raspberry Pi onto Desktop using RViz2.
+
+
+## CAD Credit
+
+Whoever made https://grabcad.com/library/arduino-uno-rev3-base-original-1 you're the goat for modelling lol
