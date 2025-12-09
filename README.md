@@ -22,6 +22,7 @@ Desktop and Raspberry Pi share same network and domain, so commands can be sent 
 ## LiDAR
 Visualized LiDAR information from Raspberry Pi onto Desktop using RViz2.
 
+![LiDar](./Images/lidar.png)
 
 ## CAD Credit
 
