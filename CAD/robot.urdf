@@ -1,0 +1,33 @@
+<robot name="autonomous_drone">
+  <link name="box_body" />
+  <link name="wheel_right" />
+  <link name="wheel_left" />
+  <link name="imu" />
+  <link name="lidar" />
+  <link name="ball_caster" />
+
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="box_body"/>
+    <child link="wheel_right"/>
+  </joint>
+
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="box_body"/>
+    <child link="wheel_left"/>
+  </joint>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="box_body"/>
+    <child link="imu"/>
+  </joint>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="box_body"/>
+    <child link="lidar"/>
+  </joint>
+
+  <joint name="ball_joint" type="fixed">
+    <parent link="box_body"/>
+    <child link="ball_caster"/>
+  </joint>
+</robot>
