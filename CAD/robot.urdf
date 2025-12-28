@@ -2,7 +2,7 @@
 <robot name="autonomous_drone">
   <link name="box_body"> 
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 .0705" rpy="0 0 0" />
       <geometry>
         <box size=".18 .18 .141" />
       </geometry>
@@ -12,7 +12,7 @@
     </visual>
     
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 .0705" rpy="0 0 0"/>
       <geometry>
         <cylinder size="1.8 1.8 1.41" />
       </geometry>
@@ -21,7 +21,7 @@
 
   <link name="wheel_right">
     <visual>
-      <origin xyz="0.103 0 0" rpy="0 1.5708 0"/>
+      <origin xyz="0.103 0.038 0.0195" rpy="0 1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -31,7 +31,7 @@
     </visual>
     
     <collision>
-      <origin xyz="0.103 0 0" rpy="0 1.5708 0"/>
+      <origin xyz="0.103 0.038 0.0195" rpy="0 1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -40,7 +40,7 @@
 
   <link name="wheel_left" >
     <visual>
-      <origin xyz="-0.103 0 0" rpy="0 -1.5708 0"/>
+      <origin xyz="-0.103 0.038 0.0195" rpy="0 -1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -50,7 +50,7 @@
     </visual>
     
     <collision>
-      <origin xyz="-0.103 0 0" rpy="0 -1.5708 0"/>
+      <origin xyz="-0.103 0.038 0.0195" rpy="0 -1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -59,12 +59,12 @@
 
   <link name="imu" >
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="-0.0174 0.05225 0.114" rpy="0 0 0" />
       <geometry>
-        <box size=".5 .5 .5" />
+        <box size="0.021 .016 .005" />
       </geometry>
       <material name="Green">
-        <color rgba="0 .3686 .0196 0"/>
+        <color rgba="0 .3686 .0196 1"/>
       </material>
     </visual>
     
@@ -78,19 +78,19 @@
 
   <link name="lidar" >
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 .16165" rpy="0 0 0" />
       <geometry>
-        <box size=".5 .5 .5" />
+        <box size="0.0556 .0556 .0413" />
       </geometry>
       <material name="Black">
-        <color rgba="0 0 0 0"/>
+        <color rgba="0 0 0 1"/>
       </material>
     </visual>
     
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 .16165" rpy="0 0 0" />
       <geometry>
-        <box size="1.8 1.8 1.41" />
+        <box size="0.0556 .0556 .0413" />
       </geometry>
     </collision>
   </link>
