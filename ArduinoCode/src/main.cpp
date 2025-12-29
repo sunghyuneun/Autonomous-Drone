@@ -62,7 +62,7 @@ Encoder encoder2(HALL2A,HALL2B);
 float vel_1 = 0.0;
 float vel_2 = 0.0;
 
-float kp = 150.0;
+float kp = 400.0;
 float ki = 40.0;
 float kd = 1.0;
 
