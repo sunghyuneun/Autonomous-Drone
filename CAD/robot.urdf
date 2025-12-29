@@ -21,7 +21,7 @@
 
   <link name="wheel_right">
     <visual>
-      <origin xyz="0.103 0.038 0.0195" rpy="0 1.5708 0"/>
+      <origin xyz="0 0 0" rpy="0 1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -31,7 +31,7 @@
     </visual>
     
     <collision>
-      <origin xyz="0.103 0.038 0.0195" rpy="0 1.5708 0"/>
+      <origin xyz="0 0 0" rpy="0 1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -40,7 +40,7 @@
 
   <link name="wheel_left" >
     <visual>
-      <origin xyz="-0.103 0.038 0.0195" rpy="0 -1.5708 0"/>
+      <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -50,7 +50,7 @@
     </visual>
     
     <collision>
-      <origin xyz="-0.103 0.038 0.0195" rpy="0 -1.5708 0"/>
+      <origin xyz="0 0 0" rpy="0 -1.5708 0"/>
       <geometry>
         <cylinder radius = "0.04" length = ".019" />
       </geometry>
@@ -97,12 +97,12 @@
 
   <link name="ball_caster" >
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 -.07 -.01113" rpy="0 0 0" />
       <geometry>
-        <box size=".5 .5 .5" />
+        <sphere radius =".009525" />
       </geometry>
       <material name="Blue">
-        <color rgba=".2588 .5294 .9608 0"/>
+        <color rgba=".2588 .5294 .9608 1"/>
       </material>
     </visual>
     
@@ -115,11 +115,15 @@
   </link>
 
   <joint name="right_wheel_joint" type="continuous">
+    <origin xyz = "0.103 0.038 0.0195"/>
+    <axis xyz="1 0 0" />
     <parent link="box_body"/>
     <child link="wheel_right"/>
   </joint>
 
   <joint name="left_wheel_joint" type="continuous">
+    <origin xyz="-0.103 0.038 0.0195"/>
+    <axis xyz="1 0 0" />
     <parent link="box_body"/>
     <child link="wheel_left"/>
   </joint>
