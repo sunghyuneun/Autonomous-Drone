@@ -1,4 +1,3 @@
-<?xml version="1.0" ?>
 <robot name="autonomous_drone">
   <link name="box_body"> 
     <visual>
@@ -135,7 +134,7 @@
   </joint>
 
   <joint name="lidar_joint" type="fixed">
-    <origin xyz="0 0 .16165"/>
+    <origin xyz="0 0 .16165" rpy="0 0 -1.5708"/>
     <parent link="box_body"/>
     <child link="lidar"/>
   </joint>

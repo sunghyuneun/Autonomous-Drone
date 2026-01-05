@@ -1,0 +1,1000 @@
+[0.013s] Invoking command in '/home/hyun/Autonomous-Drone/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyun/Autonomous-Drone/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyun/Autonomous-Drone/install/rplidar_ros
+[0.447s] -- The C compiler identification is GNU 13.3.0
+[0.818s] -- The CXX compiler identification is GNU 13.3.0
+[0.856s] -- Detecting C compiler ABI info
+[1.032s] -- Detecting C compiler ABI info - done
+[1.047s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.048s] -- Detecting C compile features
+[1.049s] -- Detecting C compile features - done
+[1.066s] -- Detecting CXX compiler ABI info
+[1.248s] -- Detecting CXX compiler ABI info - done
+[1.264s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.264s] -- Detecting CXX compile features
+[1.265s] -- Detecting CXX compile features - done
+[1.273s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.539s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.673s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.771s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.852s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.879s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.914s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.951s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.102s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.108s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[2.162s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.291s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.404s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[2.602s] -- Configuring done (2.6s)
+[2.640s] -- Generating done (0.0s)
+[2.650s] -- Build files have been written to: /home/hyun/Autonomous-Drone/build/rplidar_ros
+[2.668s] Invoked command in '/home/hyun/Autonomous-Drone/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyun/Autonomous-Drone/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyun/Autonomous-Drone/install/rplidar_ros
+[2.670s] Invoking command in '/home/hyun/Autonomous-Drone/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyun/Autonomous-Drone/build/rplidar_ros -- -j4 -l4
+[2.768s] [  5%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/src/rplidar_node.cpp.o[0m
+[2.768s] [  5%] [32mBuilding CXX object CMakeFiles/rplidar_client.dir/src/rplidar_client.cpp.o[0m
+[2.768s] [  7%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/src/rplidar_node.cpp.o[0m
+[2.770s] [ 10%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[3.577s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::[01;32m[Kopen[m[K(const char*, uint32_t, uint32_t)[m[K’:
+[3.577s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.578s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[3.578s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[3.578s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::[01;32m[Kflush[m[K(_u32)[m[K’:
+[3.578s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.579s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[3.579s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[3.579s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::[01;32m[Kwaitforsent[m[K(_u32, size_t*)[m[K’:
+[3.579s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.579s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[3.579s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[3.579s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::[01;32m[Kwaitforrecv[m[K(_u32, size_t*)[m[K’:
+[3.579s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.579s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[3.579s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[3.582s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::[01;32m[KcancelOperation[m[K()[m[K’:
+[3.582s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:427:5:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.582s]   427 |     [01;35m[K(int)::write(_selfpipe[1], "x", 1)[m[K;
+[3.583s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.820s] [ 13%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[4.760s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[4.760s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[4.760s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[4.760s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[4.760s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[4.761s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[4.761s]       |                [01;35m[K^[m[K
+[4.761s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[4.761s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[4.761s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[4.761s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[4.761s]       |                    [01;35m[K^[m[K
+[4.847s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/arch_linux.h:42[m[K,
+[4.847s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:41[m[K:
+[4.847s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::[01;32m[KsendTo[m[K(const rp::net::SocketAddress*, const void*, size_t)[m[K’:
+[4.848s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:733:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.848s]   733 |             assert([01;35m[Kans == len[m[K);
+[4.848s]       |                    [01;35m[K~~~~^~~~~~[m[K
+[5.232s] [ 15%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[6.180s] [ 18%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/dataunpacker.cpp.o[0m
+[7.077s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[7.079s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[7.079s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[7.079s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunnpacker_commondef.h:41[m[K,
+[7.079s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:39[m[K:
+[7.079s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.080s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[7.080s]       |                [01;35m[K^[m[K
+[7.085s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[7.085s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[7.085s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[7.086s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[7.086s]       |                    [01;35m[K^[m[K
+[7.311s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:40[m[K:
+[7.312s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[7.312s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.314s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[7.314s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[7.314s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.314s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[7.315s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[7.315s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.315s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[7.315s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[7.318s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.318s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[7.319s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[7.319s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[7.319s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.319s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[7.319s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[7.319s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.319s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[7.320s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[7.320s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.320s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[7.320s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[7.320s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.320s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[7.320s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[7.795s] [ 21%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o[0m
+[8.272s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[8.272s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[8.272s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[8.272s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[8.272s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.272s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[8.273s]       |                [01;35m[K^[m[K
+[8.275s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.275s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[8.275s]       |                    [01;35m[K^[m[K
+[8.497s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[8.497s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[8.498s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar.h:36[m[K,
+[8.499s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/src/rplidar_node.cpp:38[m[K:
+[8.499s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.499s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[8.499s]       |                [01;35m[K^[m[K
+[8.499s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.499s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[8.499s]       |                    [01;35m[K^[m[K
+[8.642s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[8.642s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[8.642s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[8.642s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[8.643s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39[m[K:
+[8.643s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.643s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[8.643s]       |                [01;35m[K^[m[K
+[8.643s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[8.643s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[8.647s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[8.647s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[8.647s]       |                    [01;35m[K^[m[K
+[8.837s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40[m[K:
+[8.837s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[8.837s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.837s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[8.837s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[8.838s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.838s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[8.838s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[8.838s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.838s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[8.838s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[8.838s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.839s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[8.839s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[8.839s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[8.839s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.839s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[8.842s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[8.842s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.842s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[8.842s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[8.842s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.843s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[8.843s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[8.843s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.843s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[8.843s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[8.859s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:[m[K In member function ‘[01m[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::[01;32m[K_onScanNodeDenseCapsuleData[m[K(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)[m[K’:
+[8.859s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:30:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[8.859s]   763 |             const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[8.860s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.159s] [ 23%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[9.960s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::[01;32m[Kopen[m[K(const char*, uint32_t, uint32_t)[m[K’:
+[9.960s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.960s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[9.960s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[9.961s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::[01;32m[Kflush[m[K(_u32)[m[K’:
+[9.961s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.961s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[9.962s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[9.962s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::[01;32m[Kwaitforsent[m[K(_u32, size_t*)[m[K’:
+[9.963s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.963s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[9.963s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[9.963s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::[01;32m[Kwaitforrecv[m[K(_u32, size_t*)[m[K’:
+[9.964s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.964s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[9.964s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[9.968s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::[01;32m[KcancelOperation[m[K()[m[K’:
+[9.968s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_serial.cpp:427:5:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[9.968s]   427 |     [01;35m[K(int)::write(_selfpipe[1], "x", 1)[m[K;
+[9.968s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.160s] [ 26%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[11.065s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[11.067s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[11.067s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[11.071s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[11.071s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.071s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[11.071s]       |                [01;35m[K^[m[K
+[11.072s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[11.073s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[11.074s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[11.074s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[11.074s]       |                    [01;35m[K^[m[K
+[11.161s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/arch_linux.h:42[m[K,
+[11.162s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:41[m[K:
+[11.163s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::[01;32m[KsendTo[m[K(const rp::net::SocketAddress*, const void*, size_t)[m[K’:
+[11.164s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:733:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[11.168s]   733 |             assert([01;35m[Kans == len[m[K);
+[11.168s]       |                    [01;35m[K~~~~^~~~~~[m[K
+[11.578s] [ 28%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[12.657s] [ 31%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/dataunpacker.cpp.o[0m
+[13.778s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[13.778s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[13.778s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[13.778s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunnpacker_commondef.h:41[m[K,
+[13.778s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:39[m[K:
+[13.779s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[13.779s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[13.779s]       |                [01;35m[K^[m[K
+[13.781s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[13.781s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[13.784s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[13.784s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[13.784s]       |                    [01;35m[K^[m[K
+[14.082s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.cpp:40[m[K:
+[14.083s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[14.083s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.084s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[14.084s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[14.084s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.085s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[14.085s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[14.085s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.089s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[14.089s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[14.090s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.090s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[14.090s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[14.090s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[14.090s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.091s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[14.091s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[14.095s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.095s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[14.095s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[14.095s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.096s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[14.096s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[14.096s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.096s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[14.097s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[14.608s] [ 34%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_capsules.cpp.o[0m
+[15.589s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[15.589s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[15.589s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[15.589s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[15.590s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:39[m[K:
+[15.590s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[15.590s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[15.590s]       |                [01;35m[K^[m[K
+[15.591s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[15.592s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[15.592s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[15.592s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[15.595s]       |                    [01;35m[K^[m[K
+[15.774s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:40[m[K:
+[15.774s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[15.774s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.774s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[15.774s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[15.776s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.777s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[15.777s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[15.777s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.777s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[15.777s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[15.777s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.778s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[15.778s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[15.778s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[15.778s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.778s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[15.778s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[15.781s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.781s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[15.782s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[15.782s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.782s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[15.782s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[15.782s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.782s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[15.783s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[15.793s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:[m[K In member function ‘[01m[Kvoid sl::internal::unpacker::UnpackerHandler_DenseCapsuleNode::[01;32m[K_onScanNodeDenseCapsuleData[m[K(rplidar_response_dense_capsule_measurement_nodes_t&, sl::internal::LIDARSampleDataUnpackerInner*)[m[K’:
+[15.793s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_capsules.cpp:763:30:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wignored-qualifiers-Wignored-qualifiers]8;;[m[K]
+[15.794s]   763 |             const int dist = [01;35m[Kstatic_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance)[m[K;
+[15.794s]       |                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.074s] [ 36%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o[0m
+[16.147s] [ 39%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp.o[0m
+[16.525s] [ 42%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o[0m
+[17.038s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[17.039s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[17.039s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[17.039s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[17.039s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39[m[K:
+[17.039s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[17.039s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[17.039s]       |                [01;35m[K^[m[K
+[17.042s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[17.042s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[17.043s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[17.043s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[17.043s]       |                    [01;35m[K^[m[K
+[17.094s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[17.095s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[17.095s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[17.095s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[17.095s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:39[m[K:
+[17.097s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[17.097s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[17.097s]       |                [01;35m[K^[m[K
+[17.098s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[17.098s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[17.098s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[17.098s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[17.099s]       |                    [01;35m[K^[m[K
+[17.275s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:40[m[K:
+[17.275s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[17.275s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.275s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[17.276s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[17.276s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.276s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[17.277s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[17.277s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.277s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[17.277s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[17.277s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.280s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[17.280s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[17.280s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[17.280s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.280s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[17.280s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[17.280s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.284s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[17.284s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[17.284s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.284s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[17.284s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[17.285s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.285s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[17.285s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[17.333s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_hqnode.cpp:40[m[K:
+[17.334s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[17.334s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.334s]    54 | ustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[17.335s]       |                        [01;35m[K~~~~^~~~~~~[m[K
+[17.335s] 
+[17.335s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.336s]    54 | aDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[17.336s]       |                       [01;35m[K~~~~~^~~~~~~~~~[m[K
+[17.336s] 
+[17.336s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.339s]    54 | 32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[17.339s]       |                [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[17.339s] 
+[17.339s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.339s]    54 | ode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[17.340s]       |                        [01;35m[K~~~~~~~^~~~[m[K
+[17.340s] 
+[17.340s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[17.340s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.340s]    56 | l void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[17.340s]       |                        [01;35m[K~~~~^~~~~~[m[K
+[17.340s] 
+[17.340s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.340s]    56 | odingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[17.344s]       |                        [01;35m[K~~~~^~~~~~~[m[K
+[17.344s] 
+[17.344s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.345s]    56 | , _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[17.345s]       |                [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[17.345s] 
+[17.345s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.345s]    56 | , const void* payload, [01;35m[Ksize_t size[m[K) {}
+[17.345s]       |                        [01;35m[K~~~~~~~^~~~[m[K
+[17.346s] 
+[17.493s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[17.494s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[17.494s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[17.494s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[17.494s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39[m[K:
+[17.494s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[17.494s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[17.494s]       |                [01;35m[K^[m[K
+[17.499s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[17.499s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[17.499s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[17.499s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[17.499s]       |                    [01;35m[K^[m[K
+[17.540s] [ 44%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/hal/thread.cpp.o[0m
+[17.612s] [ 47%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp.o[0m
+[17.718s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:40[m[K:
+[17.718s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[17.718s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.718s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[17.718s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[17.719s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.719s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[17.719s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[17.719s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.719s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[17.719s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[17.719s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.720s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[17.720s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[17.720s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[17.720s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.720s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[17.720s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[17.720s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.731s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[17.731s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[17.731s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.731s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[17.731s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[17.732s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.732s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[17.732s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[17.959s] [ 50%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/rplidar_driver.cpp.o[0m
+[18.499s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[18.499s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[18.500s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[18.501s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/hal/thread.cpp:35[m[K:
+[18.501s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[18.501s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[18.501s]       |                [01;35m[K^[m[K
+[18.506s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[18.506s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[18.507s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[18.507s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[18.507s]       |                    [01;35m[K^[m[K
+[18.522s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[18.523s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[18.525s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[18.525s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunnpacker_commondef.h:41[m[K,
+[18.525s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:39[m[K:
+[18.526s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[18.526s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[18.526s]       |                [01;35m[K^[m[K
+[18.531s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[18.531s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[18.531s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[18.531s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[18.531s]       |                    [01;35m[K^[m[K
+[18.558s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/hal/thread.cpp:43[m[K:
+[18.559s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::[01;32m[Kcreate[m[K(thread_proc_t, void*)[m[K’:
+[18.559s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:52:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[18.559s]    52 |     pthread_create((pthread_t *)&newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[18.559s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.562s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::[01;32m[Kjoin[m[K(long unsigned int)[m[K’:
+[18.562s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:176:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.562s]   176 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[18.563s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[18.752s] [ 52%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/hal/thread.cpp.o[0m
+[18.772s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/handler_normalnode.cpp:40[m[K:
+[18.773s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[18.773s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.773s]    54 | ustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[18.773s]       |                        [01;35m[K~~~~^~~~~~~[m[K
+[18.773s] 
+[18.777s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.777s]    54 | aDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[18.777s]       |                       [01;35m[K~~~~~^~~~~~~~~~[m[K
+[18.777s] 
+[18.777s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.778s]    54 | 32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[18.778s]       |                [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[18.778s] 
+[18.778s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.778s]    54 | ode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[18.778s]       |                        [01;35m[K~~~~~~~^~~~[m[K
+[18.778s] 
+[18.779s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[18.779s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.779s]    56 | l void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[18.779s]       |                        [01;35m[K~~~~^~~~~~[m[K
+[18.779s] 
+[18.779s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.779s]    56 | odingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[18.788s]       |                        [01;35m[K~~~~^~~~~~~[m[K
+[18.788s] 
+[18.788s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.788s]    56 | , _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[18.789s]       |                [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[18.789s] 
+[18.789s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/unpacker/../dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.789s]    56 | , const void* payload, [01;35m[Ksize_t size[m[K) {}
+[18.789s]       |                        [01;35m[K~~~~~~~^~~~[m[K
+[18.790s] 
+[18.871s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[18.871s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[18.871s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[18.871s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:33[m[K:
+[18.871s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[18.872s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[18.872s]       |                [01;35m[K^[m[K
+[18.875s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[18.875s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[18.875s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[18.875s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[18.876s]       |                    [01;35m[K^[m[K
+[18.984s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[Kconnect[m[K(const char*, _u32, _u32)[m[K’:
+[18.984s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.984s]    67 |     u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, [01;35m[K_u32 flag[m[K)
+[18.985s]       |                                                                        [01;35m[K~~~~~^~~~[m[K
+[18.986s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[Kreset[m[K(_u32)[m[K’:
+[18.988s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.988s]   101 |     u_result RPlidarDriver::reset([01;35m[K_u32 timeout[m[K)
+[18.988s]       |                                   [01;35m[K~~~~~^~~~~~~[m[K
+[18.989s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[KgetScanDataWithInterval[m[K(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[18.990s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:180:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.990s]   180 |     u_result RPlidarDriver::getScanDataWithInterval([01;35m[Krplidar_response_measurement_node_t * nodebuffer[m[K, size_t & count)
+[18.990s]       |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[18.991s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:180:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.993s]   180 |     u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, [01;35m[Ksize_t & count[m[K)
+[18.993s]       |                                                                                                       [01;35m[K~~~~~~~~~^~~~~[m[K
+[19.037s] [ 55%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[19.211s] [ 57%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_async_transceiver.cpp.o[0m
+[19.572s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[19.572s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[19.573s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[19.573s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/hal/thread.cpp:35[m[K:
+[19.573s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[19.573s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[19.573s]       |                [01;35m[K^[m[K
+[19.573s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[19.574s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[19.574s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[19.574s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[19.574s]       |                    [01;35m[K^[m[K
+[19.622s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/hal/thread.cpp:43[m[K:
+[19.622s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::[01;32m[Kcreate[m[K(thread_proc_t, void*)[m[K’:
+[19.622s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:52:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[19.622s]    52 |     pthread_create((pthread_t *)&newborn._handle, NULL, [01;35m[K(void * (*)(void *))proc[m[K, data);
+[19.622s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.627s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::[01;32m[Kjoin[m[K(long unsigned int)[m[K’:
+[19.628s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/arch/linux/thread.hpp:176:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.629s]   176 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[19.629s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[19.762s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[19.763s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[19.763s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[19.763s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:33[m[K:
+[19.763s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[19.763s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[19.763s]       |                [01;35m[K^[m[K
+[19.764s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[19.765s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[19.765s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[19.765s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[19.765s]       |                    [01;35m[K^[m[K
+[19.803s] [ 60%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_async_transceiver.cpp.o[0m
+[19.845s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[Kconnect[m[K(const char*, _u32, _u32)[m[K’:
+[19.845s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.845s]    67 | har *path, _u32 portOrBaud, [01;35m[K_u32 flag[m[K)
+[19.846s]       |                             [01;35m[K~~~~~^~~~[m[K
+[19.846s] 
+[19.846s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[Kreset[m[K(_u32)[m[K’:
+[19.846s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.846s]   101 | ult RPlidarDriver::reset([01;35m[K_u32 timeout[m[K)
+[19.846s]       |                          [01;35m[K~~~~~^~~~~~~[m[K
+[19.846s] 
+[19.846s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::[01;32m[KgetScanDataWithInterval[m[K(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[19.847s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:180:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.847s]   180 | [01;35m[Kponse_measurement_node_t * nodebuffer[m[K, size_t & count)
+[19.847s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[19.847s] 
+[19.847s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/rplidar_driver.cpp:180:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.847s]   180 | t_node_t * nodebuffer, [01;35m[Ksize_t & count[m[K)
+[19.847s]       |                        [01;35m[K~~~~~~~~~^~~~~[m[K
+[19.847s] 
+[19.936s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[19.936s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[19.937s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[19.937s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:35[m[K:
+[19.937s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[19.937s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[19.938s]       |                [01;35m[K^[m[K
+[19.939s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[19.939s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[19.939s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[19.939s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[19.939s]       |                    [01;35m[K^[m[K
+[20.040s] [ 63%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_crc.cpp.o[0m
+[20.079s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[20.079s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_crc.h:36[m[K,
+[20.079s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_crc.cpp:33[m[K:
+[20.079s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[20.079s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[20.080s]       |                [01;35m[K^[m[K
+[20.080s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[20.080s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[20.080s]       |                    [01;35m[K^[m[K
+[20.126s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:44[m[K:
+[20.126s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[20.126s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[20.127s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[20.127s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[20.128s] [ 65%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[20.463s] [ 68%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_crc.cpp.o[0m
+[20.502s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[20.502s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_crc.h:36[m[K,
+[20.503s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_crc.cpp:33[m[K:
+[20.504s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[20.504s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[20.504s]       |                [01;35m[K^[m[K
+[20.504s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[20.504s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[20.504s]       |                    [01;35m[K^[m[K
+[20.547s] [ 71%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[20.682s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[20.682s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[20.683s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[20.683s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:35[m[K:
+[20.683s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[20.683s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[20.683s]       |                [01;35m[K^[m[K
+[20.683s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[20.684s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[20.684s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[20.684s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[20.691s]       |                    [01;35m[K^[m[K
+[20.901s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.cpp:44[m[K:
+[20.901s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[20.902s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[20.902s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[20.902s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[21.069s] [ 73%] [32m[1mLinking CXX executable rplidar_client[0m
+[21.177s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[21.177s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[21.177s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[21.178s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[21.179s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[21.179s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[21.179s]       |                [01;35m[K^[m[K
+[21.180s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[21.183s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[21.183s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[21.183s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[21.183s]       |                    [01;35m[K^[m[K
+[21.291s] [ 76%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_lidarprotocol_codec.cpp.o[0m
+[21.662s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:50[m[K:
+[21.662s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[21.662s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.662s]    54 | ustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[21.663s]       |                        [01;35m[K~~~~^~~~~~~[m[K
+[21.663s] 
+[21.668s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.669s]    54 | aDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[21.669s]       |                       [01;35m[K~~~~~^~~~~~~~~~[m[K
+[21.669s] 
+[21.671s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.676s]    54 | 32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[21.676s]       |                [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[21.676s] 
+[21.677s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.680s]    54 | ode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[21.681s]       |                        [01;35m[K~~~~~~~^~~~[m[K
+[21.681s] 
+[21.682s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[21.682s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.682s]    56 | l void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[21.682s]       |                        [01;35m[K~~~~^~~~~~[m[K
+[21.682s] 
+[21.682s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.683s]    56 | odingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[21.683s]       |                        [01;35m[K~~~~^~~~~~~[m[K
+[21.683s] 
+[21.683s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.687s]    56 | , _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[21.687s]       |                [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[21.687s] 
+[21.687s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.688s]    56 | , const void* payload, [01;35m[Ksize_t size[m[K) {}
+[21.688s]       |                        [01;35m[K~~~~~~~^~~~[m[K
+[21.688s] 
+[21.691s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:51[m[K:
+[21.691s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[21.691s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.692s]    90 |    onChannelError([01;35m[Ku_result errCode[m[K) {}
+[21.692s]       |                   [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[21.692s] 
+[21.755s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[21.755s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[21.756s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[21.756s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[21.756s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[21.756s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[21.756s]       |                [01;35m[K^[m[K
+[21.760s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[21.760s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[21.760s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[21.761s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[21.761s]       |                    [01;35m[K^[m[K
+[21.769s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[Kreset[m[K(sl_u32)[m[K’:
+[21.769s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:511:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.769s]   511 |     sl_result reset([01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[21.769s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.769s] 
+[21.780s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KstartScan[m[K(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[21.780s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:586:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.780s]   586 | ool useTypicalScan, [01;35m[Ksl_u32 options = 0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[21.781s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[21.781s] 
+[21.783s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[Kstop[m[K(sl_u32)[m[K’:
+[21.783s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:763:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.783s]   763 |      sl_result stop([01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[21.784s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.784s] 
+[21.791s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KgetFrequency[m[K(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[21.791s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:880:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.791s]   880 | [01;35m[Knse_measurement_node_hq_t* nodes[m[K, size_t count, float& frequency)
+[21.791s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[21.792s] 
+[21.794s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KgetMotorInfo[m[K(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[21.794s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1023:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.794s]  1023 | torInfo &motorInfo, [01;35m[Ksl_u32 timeoutInMs[m[K)
+[21.794s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[21.794s] 
+[21.798s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ku_result sl::SlamtecLidarDriver::[01;32m[KgetScanModeCount[m[K(sl_u16&, sl_u32)[m[K’:
+[21.799s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1199:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.799s]  1199 | (sl_u16& modeCount, [01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[21.799s]       |                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.799s] 
+[21.913s] /home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp: In instantiation of ‘[01m[Kvoid sl::RawSampleNodeHolder<T>::[01;32m[KpushNode[m[K(_u64, const T*) [35m[K[with T = sl_lidar_response_measurement_node_hq_t; _u64 = long unsigned int][m[K[m[K’:
+[21.913s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1648:42:[m[K   required from here
+[21.913s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:202:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimestamp_uS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[21.913s]   202 |         void pushNode([01;35m[K_u64 timestamp_uS[m[K, const T* node)
+[21.913s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[22.093s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:50[m[K:
+[22.093s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonCustomSampleDataDecoded[m[K(_u8, _u32, const void*, size_t)[m[K’:
+[22.097s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.097s]    54 |         virtual void onCustomSampleDataDecoded([01;35m[K_u8 ansType[m[K, _u32 customCode, const void* data, size_t size) {}
+[22.097s]       |                                                [01;35m[K~~~~^~~~~~~[m[K
+[22.098s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KcustomCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.098s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, [01;35m[K_u32 customCode[m[K, const void* data, size_t size) {}
+[22.098s]       |                                                             [01;35m[K~~~~~^~~~~~~~~~[m[K
+[22.098s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:90:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.098s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, [01;35m[Kconst void* data[m[K, size_t size) {}
+[22.098s]       |                                                                              [01;35m[K~~~~~~~~~~~~^~~~[m[K
+[22.104s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:54:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.104s]    54 |         virtual void onCustomSampleDataDecoded(_u8 ansType, _u32 customCode, const void* data, [01;35m[Ksize_t size[m[K) {}
+[22.104s]       |                                                                                                [01;35m[K~~~~~~~^~~~[m[K
+[22.105s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::LIDARSampleDataListener::[01;32m[KonDecodingError[m[K(int, _u8, const void*, size_t)[m[K’:
+[22.105s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrMsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.105s]    56 |         virtual void onDecodingError([01;35m[Kint errMsg[m[K, _u8 ansType, const void* payload, size_t size) {}
+[22.105s]       |                                      [01;35m[K~~~~^~~~~~[m[K
+[22.105s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KansType[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.105s]    56 |         virtual void onDecodingError(int errMsg, [01;35m[K_u8 ansType[m[K, const void* payload, size_t size) {}
+[22.105s]       |                                                  [01;35m[K~~~~^~~~~~~[m[K
+[22.106s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.106s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, [01;35m[Kconst void* payload[m[K, size_t size) {}
+[22.106s]       |                                                               [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[22.106s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/dataunpacker/dataunpacker.h:56:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.106s]    56 |         virtual void onDecodingError(int errMsg, _u8 ansType, const void* payload, [01;35m[Ksize_t size[m[K) {}
+[22.106s]       |                                                                                    [01;35m[K~~~~~~~^~~~[m[K
+[22.116s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:51[m[K:
+[22.116s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[22.116s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.117s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[22.117s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[22.164s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[Kreset[m[K(sl_u32)[m[K’:
+[22.165s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:511:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.165s]   511 |         sl_result reset([01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[22.165s]       |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.169s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[22.169s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:83:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[22.169s]    83 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[22.169s]       |                 [01;35m[K^~~~~~~[m[K
+[22.170s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:75:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[Kconvert[m[K(const sl_lidar_response_measurement_node_t&, sl_lidar_response_measurement_node_hq_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[22.170s]    75 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_t& from, sl_lidar_response_measurement_node_hq_t& to)
+[22.170s]       |                 [01;35m[K^~~~~~~[m[K
+[22.170s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:70:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[KprintDeprecationWarn[m[K(const char*, const char*)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[22.170s]    70 |     static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[22.170s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[22.174s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KstartScan[m[K(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[22.174s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:586:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.174s]   586 |         sl_result startScan(bool force, bool useTypicalScan, [01;35m[Ksl_u32 options = 0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[22.174s]       |                                                              [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[22.175s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[Kstop[m[K(sl_u32)[m[K’:
+[22.175s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:763:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.175s]   763 |         sl_result stop([01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[22.176s]       |                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.179s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KgetFrequency[m[K(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[22.179s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:880:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.179s]   880 |         sl_result getFrequency(const LidarScanMode& scanMode, [01;35m[Kconst sl_lidar_response_measurement_node_hq_t* nodes[m[K, size_t count, float& frequency)
+[22.179s]       |                                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[22.183s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::[01;32m[KgetMotorInfo[m[K(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[22.184s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1023:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.184s]  1023 |         sl_result getMotorInfo(LidarMotorInfo &motorInfo, [01;35m[Ksl_u32 timeoutInMs[m[K)
+[22.184s]       |                                                           [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[22.186s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ku_result sl::SlamtecLidarDriver::[01;32m[KgetScanModeCount[m[K(sl_u16&, sl_u32)[m[K’:
+[22.186s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1199:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.186s]  1199 |         u_result getScanModeCount(sl_u16& modeCount, [01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[22.186s]       |                                                      [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.281s] /home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp: In instantiation of ‘[01m[Kvoid sl::RawSampleNodeHolder<T>::[01;32m[KpushNode[m[K(_u64, const T*) [35m[K[with T = sl_lidar_response_measurement_node_hq_t; _u64 = long unsigned int][m[K[m[K’:
+[22.282s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:1648:42:[m[K   required from here
+[22.282s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:202:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimestamp_uS[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.282s]   202 |         void pushNode([01;35m[K_u64 timestamp_uS[m[K, const T* node)
+[22.282s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[22.303s] [ 76%] Built target rplidar_client
+[22.324s] [ 78%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[22.471s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[22.472s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[22.472s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[22.472s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:35[m[K:
+[22.472s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.472s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[22.475s]       |                [01;35m[K^[m[K
+[22.475s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[22.475s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[22.475s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.476s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[22.479s]       |                    [01;35m[K^[m[K
+[22.511s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[22.511s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:83:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[22.511s]    83 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[22.512s]       |                 [01;35m[K^~~~~~~[m[K
+[22.512s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:75:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[Kconvert[m[K(const sl_lidar_response_measurement_node_t&, sl_lidar_response_measurement_node_hq_t&)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[22.512s]    75 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_t& from, sl_lidar_response_measurement_node_hq_t& to)
+[22.512s]       |                 [01;35m[K^~~~~~~[m[K
+[22.512s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidar_driver.cpp:70:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::[01;32m[KprintDeprecationWarn[m[K(const char*, const char*)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[22.512s]    70 |     static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[22.512s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[22.738s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:49[m[K:
+[22.738s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[22.738s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[22.738s]    90 |         virtual void   onChannelError([01;35m[Ku_result errCode[m[K) {}
+[22.738s]       |                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[22.907s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[22.907s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[22.907s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_serial_channel.cpp:33[m[K:
+[22.907s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.907s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[22.907s]       |                [01;35m[K^[m[K
+[22.909s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[22.910s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[22.910s]       |                    [01;35m[K^[m[K
+[22.991s] [ 81%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[23.044s] [ 84%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_lidarprotocol_codec.cpp.o[0m
+[23.060s] [ 86%] [32mBuilding CXX object CMakeFiles/rplidar_composition.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[23.331s] [ 89%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[23.458s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[23.458s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[23.458s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:33[m[K:
+[23.458s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.459s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[23.459s]       |                [01;35m[K^[m[K
+[23.460s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.460s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[23.460s]       |                    [01;35m[K^[m[K
+[23.468s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::[01;32m[KsetStatus[m[K(_u32)[m[K’:
+[23.469s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:109:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[23.469s]   109 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[23.469s]       |                        [01;35m[K~~~~~^~~~[m[K
+[23.518s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[23.518s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[23.518s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_udp_channel.cpp:33[m[K:
+[23.518s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.519s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[23.519s]       |                [01;35m[K^[m[K
+[23.519s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.519s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[23.519s]       |                    [01;35m[K^[m[K
+[23.528s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::[01;32m[KsetStatus[m[K(_u32)[m[K’:
+[23.528s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_udp_channel.cpp:112:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[23.529s]   112 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[23.529s]       |                        [01;35m[K~~~~~^~~~[m[K
+[23.601s] [ 92%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[23.657s] [ 94%] [32m[1mLinking CXX executable rplidar_composition[0m
+[23.971s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[23.971s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[23.971s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_serial_channel.cpp:33[m[K:
+[23.971s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.972s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[23.972s]       |                [01;35m[K^[m[K
+[23.972s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[23.972s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[23.973s]       |                    [01;35m[K^[m[K
+[24.084s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_protocol.h:36[m[K,
+[24.085s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:39[m[K,
+[24.085s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sdkcommon.h:49[m[K,
+[24.085s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:35[m[K:
+[24.085s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[24.085s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[24.085s]       |                [01;35m[K^[m[K
+[24.087s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar_cmd.h:36[m[K,
+[24.088s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/rplidar.h:40[m[K:
+[24.088s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[24.088s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[24.088s]       |                    [01;35m[K^[m[K
+[24.209s] [ 97%] [32mBuilding CXX object CMakeFiles/rplidar_node.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[24.352s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[24.353s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[24.353s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:33[m[K:
+[24.353s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[24.353s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[24.353s]       |                [01;35m[K^[m[K
+[24.356s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[24.356s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[24.356s]       |                    [01;35m[K^[m[K
+[24.368s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::[01;32m[KsetStatus[m[K(_u32)[m[K’:
+[24.368s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_tcp_channel.cpp:109:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.368s]   109 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[24.369s]       |                        [01;35m[K~~~~~^~~~[m[K
+[24.385s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_lidarprotocol_codec.cpp:49[m[K:
+[24.385s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:[m[K In member function ‘[01m[Kvirtual void sl::internal::IAsyncProtocolCodec::[01;32m[KonChannelError[m[K(u_result)[m[K’:
+[24.385s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_async_transceiver.h:90:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KerrCode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.386s]    90 |    onChannelError([01;35m[Ku_result errCode[m[K) {}
+[24.386s]       |                   [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[24.386s] 
+[24.533s] [ 97%] Built target rplidar_composition
+[24.654s] In file included from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:41[m[K,
+[24.654s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_driver.h:54[m[K,
+[24.654s]                  from [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_udp_channel.cpp:33[m[K:
+[24.654s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_protocol.h:66:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[24.654s]    66 |     sl_u8 data[[01;35m[K0[m[K];
+[24.655s]       |                [01;35m[K^[m[K
+[24.655s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/include/sl_lidar_cmd.h:324:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[24.655s]   324 |     sl_u8  payload[[01;35m[K0[m[K];
+[24.655s]       |                    [01;35m[K^[m[K
+[24.660s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::[01;32m[KsetStatus[m[K(_u32)[m[K’:
+[24.660s] [01m[K/home/hyun/Autonomous-Drone/src/rplidar_ros/sdk/src/sl_udp_channel.cpp:112:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.660s]   112 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[24.660s]       |                        [01;35m[K~~~~~^~~~[m[K
+[24.742s] [100%] [32m[1mLinking CXX executable rplidar_node[0m
+[25.296s] [100%] Built target rplidar_node
+[25.320s] Invoked command in '/home/hyun/Autonomous-Drone/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyun/Autonomous-Drone/build/rplidar_ros -- -j4 -l4
+[25.338s] Invoking command in '/home/hyun/Autonomous-Drone/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyun/Autonomous-Drone/build/rplidar_ros
+[25.353s] -- Install configuration: ""
+[25.353s] -- Execute custom install script
+[25.354s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a1_launch.py
+[25.372s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m12_launch.py
+[25.388s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m7_launch.py
+[25.405s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a2m8_launch.py
+[25.421s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3_launch.py
+[25.438s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_c1_launch.py
+[25.455s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_launch.py
+[25.471s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp_launch.py
+[25.488s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2_launch.py
+[25.505s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s2e_launch.py
+[25.521s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s3_launch.py
+[25.538s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/rplidar_t1_launch.py
+[25.555s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a1_launch.py
+[25.572s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m12_launch.py
+[25.590s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m7_launch.py
+[25.607s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a2m8_launch.py
+[25.624s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3_launch.py
+[25.642s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_c1_launch.py
+[25.659s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_launch.py
+[25.675s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp_launch.py
+[25.692s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2_launch.py
+[25.708s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s2e_launch.py
+[25.726s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s3_launch.py
+[25.744s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_t1_launch.py
+[25.761s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/rviz/rplidar_ros.rviz
+[25.779s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/lib/rplidar_ros/rplidar_node
+[25.795s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/lib/rplidar_ros/rplidar_composition
+[25.813s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/lib/rplidar_ros/rplidar_client
+[25.830s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros
+[25.847s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros
+[25.865s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh
+[25.882s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv
+[25.899s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/environment/path.sh
+[25.916s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/environment/path.dsv
+[25.932s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/local_setup.bash
+[25.949s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/local_setup.sh
+[25.966s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/local_setup.zsh
+[25.982s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/local_setup.dsv
+[26.000s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.dsv
+[26.017s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros
+[26.034s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[26.052s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[26.068s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+[26.085s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake
+[26.102s] -- Symlinking: /home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.xml
+[26.122s] Invoked command in '/home/hyun/Autonomous-Drone/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyun/Autonomous-Drone/build/rplidar_ros

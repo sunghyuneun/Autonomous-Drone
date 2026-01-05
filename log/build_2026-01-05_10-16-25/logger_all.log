@@ -1,0 +1,495 @@
+[0.146s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.146s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff7f8e6060>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7fa96930>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7fa96930>>, mixin_verb=('build',))
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.204s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hyun/Autonomous-Drone'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'ros'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'cmake'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'python'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extensions ['python_setup_py']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/include) by extension 'python_setup_py'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'ros'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'cmake'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'python'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/lib) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'ros'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extensions ['cmake', 'python']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'cmake'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'python'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/src) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(ArduinoCode/test) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD) by extension 'python_setup_py'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/individual parts) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAD/plates) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/include) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/lib) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/src) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DC Motor Test/test) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'ros'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extensions ['cmake', 'python']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'cmake'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'python'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extensions ['python_setup_py']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino) by extension 'python_setup_py'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'ros'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extensions ['cmake', 'python']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'cmake'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'ros'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extensions ['cmake', 'python']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'cmake'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'python'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extensions ['python_setup_py']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/include) by extension 'python_setup_py'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'ros'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extensions ['cmake', 'python']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'cmake'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'python'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extensions ['python_setup_py']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/lib) by extension 'python_setup_py'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'ros'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extensions ['cmake', 'python']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'cmake'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'python'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extensions ['python_setup_py']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/src) by extension 'python_setup_py'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'ros'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extensions ['cmake', 'python']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'cmake'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'python'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extensions ['python_setup_py']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/Arduino Firmware/LED PWM/test) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(DesktopRPiArduino/ROS2) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(Images) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(RaspPiCode) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(launch/__pycache__) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.290s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.292s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/hyun/ros2_ws/install
+[0.294s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 292 installed packages in /opt/ros/jazzy
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.358s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.358s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hyun/Autonomous-Drone/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hyun/Autonomous-Drone/install/rplidar_ros', 'merge_install': False, 'path': '/home/hyun/Autonomous-Drone/src/rplidar_ros', 'symlink_install': True, 'test_result_base': None}
+[0.358s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.360s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.360s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hyun/Autonomous-Drone/src/rplidar_ros' with build type 'ament_cmake'
+[0.360s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hyun/Autonomous-Drone/src/rplidar_ros'
+[0.362s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.363s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.363s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyun/Autonomous-Drone/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyun/Autonomous-Drone/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyun/Autonomous-Drone/install/rplidar_ros
+[3.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyun/Autonomous-Drone/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/hyun/Autonomous-Drone/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hyun/Autonomous-Drone/install/rplidar_ros
+[3.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyun/Autonomous-Drone/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyun/Autonomous-Drone/build/rplidar_ros -- -j4 -l4
+[25.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyun/Autonomous-Drone/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/hyun/Autonomous-Drone/build/rplidar_ros -- -j4 -l4
+[25.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hyun/Autonomous-Drone/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyun/Autonomous-Drone/build/rplidar_ros
+[26.481s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[26.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hyun/Autonomous-Drone/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/hyun/Autonomous-Drone/build/rplidar_ros
+[26.485s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros' for CMake module files
+[26.486s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros' for CMake config files
+[26.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[26.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[26.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[26.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[26.489s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/lib'
+[26.489s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/bin'
+[26.489s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[26.489s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/lib/python3.12/site-packages'
+[26.490s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/bin'
+[26.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[26.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[26.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.sh'
+[26.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.bash'
+[26.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[26.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyun/Autonomous-Drone/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[26.495s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[26.495s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros' for CMake module files
+[26.496s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros' for CMake config files
+[26.496s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[26.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[26.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[26.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[26.498s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/lib'
+[26.499s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/bin'
+[26.499s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[26.499s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/lib/python3.12/site-packages'
+[26.499s] Level 1:colcon.colcon_core.environment:checking '/home/hyun/Autonomous-Drone/install/rplidar_ros/bin'
+[26.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[26.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[26.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.sh'
+[26.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.bash'
+[26.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/hyun/Autonomous-Drone/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[26.503s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hyun/Autonomous-Drone/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[26.504s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[26.505s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[26.506s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[26.506s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[26.640s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[26.641s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[26.642s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[26.642s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[26.644s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[26.645s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[26.646s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyun/Autonomous-Drone/install/local_setup.ps1'
+[26.648s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hyun/Autonomous-Drone/install/_local_setup_util_ps1.py'
+[26.649s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyun/Autonomous-Drone/install/setup.ps1'
+[26.651s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyun/Autonomous-Drone/install/local_setup.sh'
+[26.652s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hyun/Autonomous-Drone/install/_local_setup_util_sh.py'
+[26.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyun/Autonomous-Drone/install/setup.sh'
+[26.654s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyun/Autonomous-Drone/install/local_setup.bash'
+[26.654s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyun/Autonomous-Drone/install/setup.bash'
+[26.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hyun/Autonomous-Drone/install/local_setup.zsh'
+[26.657s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hyun/Autonomous-Drone/install/setup.zsh'
