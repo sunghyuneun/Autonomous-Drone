@@ -62,10 +62,14 @@ Encoder encoder2(HALL2A,HALL2B);
 float vel_1 = 0.0;
 float vel_2 = 0.0;
 
-float kp = 400.0;
-float ki = 40.0;
-float kd = 1.0;
 
+//float kp = 150.0;
+//float ki = 40.0;
+//float kd = 1.0;
+float kp = 250.0;
+float ki = 100.0;
+float kd = 0.0;
+//Yeah these seem to work let's just go with a PI controller lol
 
 float target_vel_1 = 0.0;
 float target_vel_2 = 0.0;
@@ -208,6 +212,7 @@ void IMU_Calibration(){
   X_GYRO_BIAS = X_GYRO_SUM / (float) CALIB_TIMESTEPS;
   Y_GYRO_BIAS = Y_GYRO_SUM / (float) CALIB_TIMESTEPS;
   Z_GYRO_BIAS = Z_GYRO_SUM / (float) CALIB_TIMESTEPS;
+  /*
   Serial.print("IMU Calibrated.");
 
   Serial.print(X_ACCEL_BIAS);
@@ -222,6 +227,7 @@ void IMU_Calibration(){
   Serial.print(",");
   Serial.print(Z_GYRO_BIAS);
   Serial.print("\n");
+  */
 }
 
 
