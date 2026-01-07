@@ -236,8 +236,12 @@ void drive_motor(float power1, float power2){
   else digitalWrite(PH1, LOW);
   if (power2 >= 0) digitalWrite(PH2, HIGH);
   else digitalWrite(PH2, LOW);
-  int pwmVal1 = constrain(abs(power1), 0, 255);
-  int pwmVal2 = constrain(abs(power2), 0, 255);
+  int pwmVal1;
+  int pwmVal2;
+  if (abs(target_vel_1) < 0.0001) pwmVal1 = 0;
+  else pwmVal1 = constrain(abs(power1), 0, 255);
+  if (abs(target_vel_2) < 0.0001) pwmVal2 = 0;
+  else pwmVal2 = constrain(abs(power2), 0, 255);
   //Max is like 1.64 lol
   analogWrite(EN1, pwmVal1);
   analogWrite(EN2, pwmVal2);
