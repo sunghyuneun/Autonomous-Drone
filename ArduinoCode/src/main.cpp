@@ -62,10 +62,14 @@ Encoder encoder2(HALL2A,HALL2B);
 float vel_1 = 0.0;
 float vel_2 = 0.0;
 
-float kp = 400.0;
-float ki = 40.0;
-float kd = 1.0;
 
+//float kp = 150.0;
+//float ki = 40.0;
+//float kd = 1.0;
+float kp = 250.0;
+float ki = 100.0;
+float kd = 0.0;
+//Yeah these seem to work let's just go with a PI controller lol
 
 float target_vel_1 = 0.0;
 float target_vel_2 = 0.0;
@@ -208,6 +212,7 @@ void IMU_Calibration(){
   X_GYRO_BIAS = X_GYRO_SUM / (float) CALIB_TIMESTEPS;
   Y_GYRO_BIAS = Y_GYRO_SUM / (float) CALIB_TIMESTEPS;
   Z_GYRO_BIAS = Z_GYRO_SUM / (float) CALIB_TIMESTEPS;
+  /*
   Serial.print("IMU Calibrated.");
 
   Serial.print(X_ACCEL_BIAS);
@@ -222,6 +227,7 @@ void IMU_Calibration(){
   Serial.print(",");
   Serial.print(Z_GYRO_BIAS);
   Serial.print("\n");
+  */
 }
 
 
@@ -230,8 +236,12 @@ void drive_motor(float power1, float power2){
   else digitalWrite(PH1, LOW);
   if (power2 >= 0) digitalWrite(PH2, HIGH);
   else digitalWrite(PH2, LOW);
-  int pwmVal1 = constrain(abs(power1), 0, 255);
-  int pwmVal2 = constrain(abs(power2), 0, 255);
+  int pwmVal1;
+  int pwmVal2;
+  if (abs(target_vel_1) < 0.0001) pwmVal1 = 0;
+  else pwmVal1 = constrain(abs(power1), 0, 255);
+  if (abs(target_vel_2) < 0.0001) pwmVal2 = 0;
+  else pwmVal2 = constrain(abs(power2), 0, 255);
   //Max is like 1.64 lol
   analogWrite(EN1, pwmVal1);
   analogWrite(EN2, pwmVal2);
