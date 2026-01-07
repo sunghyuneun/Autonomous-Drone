@@ -1,0 +1,61 @@
+ekf_filter_node:
+    ros__parameters:
+      frequency: 30.0
+      sensor_timeout: 0.1
+      two_d_mode: false
+      transform_time_offset: 0.0
+      transform_timeout: 0.0
+      print_diagnostics: true
+      debug: false
+      debug_out_file: /home/hyun/Autonomous-Drone/log/robot_localization_debug.txt
+      permit_corrected_publication: false
+      publish_acceleration: false
+      publish_tf: true
+
+      map_frame: map
+      odom_frame: odom
+      base_link_frame: box_body
+      world_frame: odom
+
+      # --- 2. Odometry Input ---
+      odom0: /odom
+      # [x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw]
+      odom0_config: [false, false, false, 
+                    false, false, false, 
+                    true,  true,  false, 
+                    false, false, true,
+                    false, false, false]
+      odom0_differential: false
+      odom0_relative: false
+
+      # --- 3. IMU Input ---
+      # Note: Ensure this matches the topic published by your bridge (imu/raw_data)
+      imu0: /imu/raw_data
+      imu0_config: [false, false, false, 
+                    false, false, true, 
+                    false, false, false, 
+                    false, false, true,
+                    true,  false, false]
+      imu0_differential: false
+      imu0_relative: true
+      imu0_remove_gravitational_acceleration: true
+
+      # --- 4. Process Noise Covariance ---
+      # CRITICAL: This MUST be a 15x15 matrix (225 values). 
+      # If shortened to 15 values, the node will crash with exit code -6.
+      # Below is a standard diagonal matrix representation.
+      process_noise_covariance: [0.05, 0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.05,  0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.06,  0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.03,  0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.03,  0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.06,  0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.025,  0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.025,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.04,  0.0,    0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.01,  0.0,    0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.01,  0.0,    0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.02,  0.0,    0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.01,  0.0,    0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.01,  0.0,
+                                0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.0,     0.0,     0.0,    0.0,    0.0,    0.0,    0.0,    0.0,    0.015]
