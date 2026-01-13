@@ -15,15 +15,23 @@ Similar to Turtlebot 3
 
 # Progress
 
-## Initial Pipeline
-Created a ROS2 pipeline from Desktop - Raspberry Pi - Arduino
-Desktop and Raspberry Pi share same network and domain, so commands can be sent from the Desktop, received at Raspberry Pi, write instructions to Arduino, which does PWM to an LED. 
-
 ## LiDAR
 Visualized LiDAR information from Raspberry Pi onto Desktop using RViz2.
 
 ![LiDar](./Images/lidar.png)
 
-## CAD Credit
+After I moved, I could not set up proper port forwarding at my dorm between my Raspberry Pi and my VM, so I switched to Foxglove.
 
-Whoever made https://grabcad.com/library/arduino-uno-rev3-base-original-1 you're the goat for modelling lol
+Here is an example Map with my robot and LiDAR visualized on it.
+![Foxglove Map](./Images/FoxgloveMap.png)
+
+## Assembly
+Finished the CAD assembly, and built it in real life. 
+
+![Full Assembly](./Images/fullassembly.png)
+
+![Drone1](./Images/Drone1.jpg )
+
+![Drone2](./Images/Drone2.jpg)
+
+![Drone3](./Images/Drone3.jpg)
